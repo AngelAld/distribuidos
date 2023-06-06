@@ -74,7 +74,8 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
-
+        Dim objVenta = New frmGestionarVenta
+        objVenta.ShowDialog()
     End Sub
 
     Private Sub PagoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PagoToolStripMenuItem.Click
@@ -83,7 +84,10 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
-
+        Me.Hide()
+        IniciarSesionToolStripMenuItem.Enabled = True
+        Dim objLogin As New frmLogin
+        objLogin.Show()
     End Sub
 
     Private Sub ProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedoresToolStripMenuItem.Click

@@ -25,6 +25,9 @@
     <Compile Update="frmGestionarUnidadMedida.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmGestionarVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>

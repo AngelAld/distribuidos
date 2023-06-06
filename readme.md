@@ -8,6 +8,5 @@
 * Grace Veronika Santos Vilela
 * Aldana Ayasta Angel Arturo
 
-## Usuario: admin
-
-## Contraseña: 123
+**Usuario: admin**
+**Contraseña: 123**

@@ -78,14 +78,15 @@ Partial Class MDIPrincipal
         ' 
         ' IniciarSesionToolStripMenuItem
         ' 
+        IniciarSesionToolStripMenuItem.Enabled = False
         IniciarSesionToolStripMenuItem.Name = "IniciarSesionToolStripMenuItem"
-        IniciarSesionToolStripMenuItem.Size = New Size(142, 22)
+        IniciarSesionToolStripMenuItem.Size = New Size(180, 22)
         IniciarSesionToolStripMenuItem.Text = "Iniciar sesion"
         ' 
         ' CerrarSesionToolStripMenuItem
         ' 
         CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        CerrarSesionToolStripMenuItem.Size = New Size(142, 22)
+        CerrarSesionToolStripMenuItem.Size = New Size(180, 22)
         CerrarSesionToolStripMenuItem.Text = "cerrar sesion"
         ' 
         ' FileMenu

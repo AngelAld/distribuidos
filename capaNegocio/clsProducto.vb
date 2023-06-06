@@ -51,6 +51,19 @@ Public Class clsProducto
         End Try
     End Function
 
+    Public Function listarProductoPorCategoria(id As Integer) As DataTable
+        strSQL = "select p.idproducto,c.descripcion as categoria,l.descripcion as laboratorio, p.descripcion, m.descripcion as marca, u.descripcion as und_medida, p.stock,p.precio,p.estado
+                    from producto p
+                    inner join laboratorio l on (p.idlaboratorio=l.idlaboratorio)
+                    inner join categoria c on (p.idcategoria=c.idcategoria)
+                    inner join marca m on (p.idmarca=m.idmarca)
+                    inner join unidadmedida u on (p.idunidadmedida=u.idunidadmedida) where p.idcategoria = " & id
+        Try
+            Return objMantenimiento.listarComando(strSQL)
+        Catch ex As Exception
+            Throw New Exception("Error al listar Productos")
+        End Try
+    End Function
     Public Function buscarProducto(id As Integer) As DataTable
         strSQL = "select * from producto where idproducto=" & id
         Try
