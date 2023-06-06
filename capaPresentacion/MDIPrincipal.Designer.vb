@@ -41,6 +41,8 @@ Partial Class MDIPrincipal
         VentaToolStripMenuItem = New ToolStripMenuItem()
         ToolStripSeparator7 = New ToolStripSeparator()
         PagoToolStripMenuItem = New ToolStripMenuItem()
+        CompraToolStripMenuItem = New ToolStripMenuItem()
+        ComprasToolStripMenuItem = New ToolStripMenuItem()
         UsuariosToolStripMenuItem2 = New ToolStripMenuItem()
         RolesToolStripMenuItem = New ToolStripMenuItem()
         UsuariosToolStripMenuItem1 = New ToolStripMenuItem()
@@ -52,8 +54,6 @@ Partial Class MDIPrincipal
         ToolStripStatusLabel = New ToolStripStatusLabel()
         ToolStripStatusLabel1 = New ToolStripStatusLabel()
         ToolTip = New ToolTip(components)
-        CompraToolStripMenuItem = New ToolStripMenuItem()
-        ComprasToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip.SuspendLayout()
         ToolStrip.SuspendLayout()
         StatusStrip.SuspendLayout()
@@ -99,47 +99,47 @@ Partial Class MDIPrincipal
         ' ProveedoresToolStripMenuItem
         ' 
         ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        ProveedoresToolStripMenuItem.Size = New Size(180, 22)
+        ProveedoresToolStripMenuItem.Size = New Size(171, 22)
         ProveedoresToolStripMenuItem.Text = "Proveedores"
         ' 
         ' UnidadDeMedidaToolStripMenuItem
         ' 
         UnidadDeMedidaToolStripMenuItem.Name = "UnidadDeMedidaToolStripMenuItem"
-        UnidadDeMedidaToolStripMenuItem.Size = New Size(180, 22)
+        UnidadDeMedidaToolStripMenuItem.Size = New Size(171, 22)
         UnidadDeMedidaToolStripMenuItem.Text = "Unidad de medida"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(177, 6)
+        ToolStripSeparator2.Size = New Size(168, 6)
         ' 
         ' CategoriasToolStripMenuItem
         ' 
         CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        CategoriasToolStripMenuItem.Size = New Size(180, 22)
+        CategoriasToolStripMenuItem.Size = New Size(171, 22)
         CategoriasToolStripMenuItem.Text = "Categorias"
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(180, 22)
+        ToolStripMenuItem2.Size = New Size(171, 22)
         ToolStripMenuItem2.Text = "Marcas"
         ' 
         ' ToolStripMenuItem1
         ' 
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(180, 22)
+        ToolStripMenuItem1.Size = New Size(171, 22)
         ToolStripMenuItem1.Text = "Laboratorios"
         ' 
         ' ToolStripSeparator4
         ' 
         ToolStripSeparator4.Name = "ToolStripSeparator4"
-        ToolStripSeparator4.Size = New Size(177, 6)
+        ToolStripSeparator4.Size = New Size(168, 6)
         ' 
         ' ToolStripMenuItem3
         ' 
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(180, 22)
+        ToolStripMenuItem3.Size = New Size(171, 22)
         ToolStripMenuItem3.Text = "Productos"
         ' 
         ' EditMenu
@@ -152,19 +152,32 @@ Partial Class MDIPrincipal
         ' VentaToolStripMenuItem
         ' 
         VentaToolStripMenuItem.Name = "VentaToolStripMenuItem"
-        VentaToolStripMenuItem.Size = New Size(180, 22)
+        VentaToolStripMenuItem.Size = New Size(103, 22)
         VentaToolStripMenuItem.Text = "Venta"
         ' 
         ' ToolStripSeparator7
         ' 
         ToolStripSeparator7.Name = "ToolStripSeparator7"
-        ToolStripSeparator7.Size = New Size(177, 6)
+        ToolStripSeparator7.Size = New Size(100, 6)
         ' 
         ' PagoToolStripMenuItem
         ' 
         PagoToolStripMenuItem.Name = "PagoToolStripMenuItem"
-        PagoToolStripMenuItem.Size = New Size(180, 22)
+        PagoToolStripMenuItem.Size = New Size(103, 22)
         PagoToolStripMenuItem.Text = "Pago"
+        ' 
+        ' CompraToolStripMenuItem
+        ' 
+        CompraToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ComprasToolStripMenuItem})
+        CompraToolStripMenuItem.Name = "CompraToolStripMenuItem"
+        CompraToolStripMenuItem.Size = New Size(62, 20)
+        CompraToolStripMenuItem.Text = "Compra"
+        ' 
+        ' ComprasToolStripMenuItem
+        ' 
+        ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
+        ComprasToolStripMenuItem.Size = New Size(122, 22)
+        ComprasToolStripMenuItem.Text = "Compras"
         ' 
         ' UsuariosToolStripMenuItem2
         ' 
@@ -235,19 +248,6 @@ Partial Class MDIPrincipal
         ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         ToolStripStatusLabel1.Size = New Size(119, 17)
         ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
-        ' 
-        ' CompraToolStripMenuItem
-        ' 
-        CompraToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ComprasToolStripMenuItem})
-        CompraToolStripMenuItem.Name = "CompraToolStripMenuItem"
-        CompraToolStripMenuItem.Size = New Size(62, 20)
-        CompraToolStripMenuItem.Text = "Compra"
-        ' 
-        ' ComprasToolStripMenuItem
-        ' 
-        ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        ComprasToolStripMenuItem.Size = New Size(180, 22)
-        ComprasToolStripMenuItem.Text = "Compras"
         ' 
         ' MDIPrincipal
         ' 

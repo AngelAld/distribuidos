@@ -89,12 +89,13 @@ Public Class frmcompra
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        'ABRE A IOSIV
-
+        Dim objDetalleNew As New frmDetalleCompra
+        objDetalleNew.ShowDialog()
     End Sub
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
-
+        Dim objDetalleNew As New frmDetalleCompra
+        objDetalleNew.ShowDialog()
     End Sub
 
     Private Sub frmcompra_Load(sender As Object, e As EventArgs) Handles MyBase.Load

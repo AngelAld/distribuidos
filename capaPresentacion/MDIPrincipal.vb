@@ -18,9 +18,6 @@ Public Class MDIPrincipal
 
     End Sub
 
-    Private Sub MDIPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    End Sub
-
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
         Dim objProductos As New frmGestionarProducto
@@ -97,5 +94,11 @@ Public Class MDIPrincipal
     Private Sub ComprasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ComprasToolStripMenuItem.Click
         Dim objCompra As New frmcompra
         objCompra.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        Me.Hide()
+        Dim objLogin As New frmLogin
+        objLogin.Show()
     End Sub
 End Class
